@@ -1,0 +1,25 @@
+
+<div class="container">
+  <strong> <a routerLink="/" routerLinkActive="active">Back</a></strong>
+<h3>Movie's Collection</h3>
+ <div class="row col-md-6 col-md-offset-2 custyle">
+<table class="table table-striped custab">
+ <thead>
+   <tr>
+     <th style="width: 25px">Id</th>
+     <th style="width: 200px">Movie Name</th>
+     <th style="width: 200px">Director Name</th>
+     <th style="width: 200px">Release Year</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr *ngFor="let row of movies">
+     <td>{{ row.id }}</td>
+     <td>{{ row.name }}</td>
+     <td>{{ row.directorName }}</td>
+     <td>{{ row.releaseYear }}</td>
+   </tr>
+ </tbody>
+</table>
+</div>
+</div>
